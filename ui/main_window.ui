@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1e1e2f;
+    color: white;
+    font-size: 12pt;
+}
+
+QPushButton {
+    background-color: #ff9800;
+    color: black;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #ffc107;
+}
+
+QListWidget, QComboBox, QSpinBox {
+    background-color: #2e2e3e;
+    border-radius: 6px;
+    padding: 4px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="text">
+      <string>🍔 Food Ordering App</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>انتخاب رستوران</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="restaurantBox"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>منوی غذا</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="menuList"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>تعداد</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="quantitySpin">
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>20</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>سفارش شما</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="orderList"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="totalLabel">
+     <property name="text">
+      <string>مبلغ کل: 0 تومان</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="addButton">
+     <property name="text">
+      <string>➕ افزودن</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="removeButton">
+     <property name="text">
+      <string>❌ حذف</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
